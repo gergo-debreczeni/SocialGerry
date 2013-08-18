@@ -7,7 +7,7 @@ define(['views/index', 'views/register', 'views/login', 'views/forgotpassword'],
 				   "index":           "index",
 				   "login":           "login",
 				   "register":        "register",
-				   "forgotpassword":  "forgotPassword"
+				   "forgotpassword":  "forgotpassword"
 			   },
 
 			   changeView: function(view){
@@ -26,7 +26,7 @@ define(['views/index', 'views/register', 'views/login', 'views/forgotpassword'],
 				   this.changeView(new LoginView());
 			   },
 
-			   forgotpasswort: function() {
+			   forgotpassword: function() {
 				   this.changeView(new ForgotPasswordView());
 			   },
 
