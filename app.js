@@ -17,7 +17,7 @@ app.configure(function(){
 	app.use(express.cookieParser());
 	app.use(express.session(
 		{secret: "SocialGerry secret key", store : new MemoryStore()}));
-	mongoose.connect('mongodb:/localhost/test');
+	mongoose.connect('mongodb://localhost/test');
 });
 
 app.get('/', function(req,res){
